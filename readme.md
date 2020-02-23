@@ -15,6 +15,7 @@ Repo des cours de développement web en première année pour la promotion P2024
         - [ ] `for`
         - [ ] `for ... in`
         - [ ] `for ... of`
+        - [ ] `forEach`
     - [ ] Function
         - [ ] Classic
         - [ ] Fat arrow
