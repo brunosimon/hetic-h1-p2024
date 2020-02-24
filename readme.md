@@ -50,6 +50,11 @@ Repo des cours de développement web en première année pour la promotion P2024
 # Exercices
 
 - [ ] Font size controller (click on + and - to change font size)
+- [ ] Weight convertissor
+- [ ] Calculator
+- [ ] Dice
+- [ ] Digital clock
+- [ ] Needles clock
 - [ ] Target shooter (mouse that shoot targets)
 - [ ] Keyboard typer (write the word fast)
 - [ ] Catcher (keyboard player that catch targets)
@@ -60,8 +65,6 @@ Repo des cours de développement web en première année pour la promotion P2024
 - [ ] Lazy loader
 - [ ] Cursor parallax
 - [ ] Scroll parallax
-- [ ] Digital clock
-- [ ] Needles clock
 - [ ] Drumkit
 - [ ] Weather widget
 - [ ] 3D button

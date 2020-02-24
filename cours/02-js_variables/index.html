@@ -68,7 +68,7 @@
                     <p>Pour créer une variable, nous commencons par écrire <span class="hl">var</span> suivi d'un <span class="hl">=</span> et de la valeur</p>
                     <div class="code-steps" data-type="js" data-trim>
                         <pre contenteditable><code>
-var foo = 'bar'
+var foo = 'bar';
                         </code></pre>
                     </div>
                 </section>
@@ -78,8 +78,8 @@ var foo = 'bar'
                     <p>Depuis l'ES6, on utilise les termes <span class="hl">const</span> et <span class="hl">let</span></p>
                     <div class="code-steps" data-type="js" data-trim>
                         <pre contenteditable><code>
-const foo = 'bar'
-let toto = 'tata'
+const foo = 'bar';
+let toto = 'tata';
                         </code></pre>
                     </div>
                 </section>
@@ -95,6 +95,10 @@ let toto = 'tata'
                     <p>Nous allons donc toujours utiliser <span class="hl">const</span> a moins d'avoir l'intension de changer sa valeur par la suite</p>
                     <p>Cela optimise la gestion de la mémoire</p>
                     <p>Il n'est aujourd'hui plus nécessaire d'utiliser <span class="hl">var</span></p>
+                </section>
+
+                <section>
+                    <p>☝️ Le fait de mettre une valeur dans une variable s'appelle une <span class="u">assignation</span></p>
                 </section>
 
                 <section>
@@ -132,18 +136,18 @@ let toto = 'tata'
                     <div class="code-steps" data-type="js" data-trim>
                         <pre contenteditable><code>
 // Bien 
-const foo_bar = 'lorem ipsum' // Underscore (underscore entre chaque mot, aucune majuscule)
-const fooBar  = 'lorem ipsum' // CamelCase ou LowerCamelCase (tout à la suite, majuscule à chaque mot sauf premier)
-const FooBar  = 'lorem ipsum' // PascalCase ou UpperCamelCase (tout à la suite, majuscule à chaque mot)
+const foo_bar = 'lorem ipsum'; // Underscore (underscore entre chaque mot, aucune majuscule)
+const fooBar  = 'lorem ipsum'; // CamelCase ou LowerCamelCase (tout à la suite, majuscule à chaque mot sauf premier)
+const FooBar  = 'lorem ipsum'; // PascalCase ou UpperCamelCase (tout à la suite, majuscule à chaque mot)
 
 // Éviter
-const foobar  = 'lorem ipsum'
-const FOOBAR  = 'lorem ipsum' // Utilisé pour les variables globales tout de même
+const foobar  = 'lorem ipsum';
+const FOOBAR  = 'lorem ipsum'; // Utilisé pour les variables globales tout de même
 
 // Pas bien
-const foo-bar = 'lorem ipsum' // Ne fonctionne pas
-const fO_bAR  = 'lorem ipsum'
-const foo bar = 'lorem ipsum' // Ne fonctionne pas
+const foo-bar = 'lorem ipsum'; // Ne fonctionne pas
+const fO_bAR  = 'lorem ipsum';
+const foo bar = 'lorem ipsum'; // Ne fonctionne pas
                         </code></pre>
                     </div>
                 </section>
@@ -361,7 +365,7 @@ console.log(foo['toto'])
                         <li>function</li>
                         <li>null</li>
                         <li>undefined</li>
-                        <li>date</li>
+                        <li>Date</li>
                         <li>DOMElement</li>
                         <li>regex</li>
                         <li>...</li>
@@ -410,7 +414,7 @@ new Date() instanceof Date // true
 /abcd/ instanceof RegExp   // true
                         </code></pre>
                     </div>
-                    <p class="fragment">Pas mal mais pas très pratique</p>
+                    <p class="fragment">Pas mal, mais pas très pratique</p>
                 </section>
 
             </div>
