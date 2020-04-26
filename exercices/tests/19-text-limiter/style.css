@@ -1,0 +1,33 @@
+body
+{
+    background: #dddddd;
+}
+
+.text-limiter
+{
+    width: 800px;
+    margin: 20px auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.text-limiter .text
+{
+    width: 100%;
+    height: 250px;
+    border: none;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 2em;
+    outline: none;
+    border-radius: 10px;
+    resize: none;
+    color: #666666;
+}
+
+.text-limiter .left
+{
+    font-size: 18px;
+    line-height: 2em;
+    color: #666666;
+}

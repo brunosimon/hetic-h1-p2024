@@ -108,6 +108,7 @@ foo.onmouseover = () =>
                         <li>onkeyup</li>
                         <li>onkeypress</li>
                     </ul>
+                    <p>☝️ Fonctionne à la fois sur la page en général, mais aussi sur des inputs de type text ou des textareas</p>
                 </section>
 
                 <section>
@@ -144,9 +145,9 @@ foo.onclick = (event) =>
                     <p>L'une des ces méthodes est <span class="hl">preventDefault()</span> et permet d'annuler le comportement de base</p>
                     <div class="code-steps" data-type="js" data-trim>
                         <pre contenteditable><code>
-const foo = document.querySelector('.foo')
+const input = document.querySelector('input.foo')
 
-foo.onkeydown = (event) =>
+input.onkeydown = (event) =>
 {
     event.preventDefault()
     console.log('ok')
@@ -174,7 +175,7 @@ foo.onclick = () =>
                 </section>
 
                 <section>
-                    <p>La solution est d'utiliser la méthode <span class="hl">addEventListener()</span></p>
+                    <p>La solution est d'utiliser la méthode <span class="hl">addEventListener()</span> qui va rajouter un écouteur d'événement sans écraser les autres</p>
                     <div class="code-steps" data-type="js" data-trim>
                         <pre contenteditable><code>
 foo.addEventListener('click', () =>

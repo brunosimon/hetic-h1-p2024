@@ -1,0 +1,40 @@
+body
+{
+    background: #dddddd;
+}
+
+.container
+{
+    width: 800px;
+    margin: 20px auto;
+}
+
+.controller .less,
+.controller .more
+{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    background: linear-gradient(#444444, #222222);
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.controller .value
+{
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.text
+{
+    margin-top: 10px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+    font-size: 14px;
+}

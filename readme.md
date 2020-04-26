@@ -5,54 +5,63 @@ Repo des cours de développement web en première année pour la promotion P2024
 # Cours
 
 - [ ] JS
-    - [ ] `script` tag
-    - [ ] `alert`
-    - [ ] `console`
-    - [ ] Variables / Nomenclature / `const` / `let`
-    - [ ] Concatenation / Back quotes
+    - [x] `script` tag
+    - [x] `alert`
+    - [x] `console`
+    - [x] Variables
+        - [x] Nomenclature
+        - [x] `const` / `let`
+        - [x] Types
+    - [x] Concatenation / Back quotes
     - [ ] Boucles
         - [ ] `while`
-        - [ ] `for`
-        - [ ] `for ... in`
-        - [ ] `for ... of`
-        - [ ] `forEach`
-    - [ ] Function
-        - [ ] Classic
-        - [ ] Fat arrow
-        - [ ] `return`
+        - [x] `for`
+        - [x] `for ... in`
+        - [x] `for ... of`
+        - [x] `forEach`
+    - [x] Function
+        - [x] Classic
+        - [x] Fat arrow
+        - [x] `return`
     - [ ] Events
-        - [ ] `addEventListeners`
-        - [ ] Callbacks
-        - [ ] `click` / `mousemove` / `mousedown` / `mouseup` / `mouseenter` / `mouseleave`
-        - [ ] `keydown` / `keyup`
+        - [x] `addEventListeners`
+        - [x] Callbacks
+        - [x] `click` / `mousemove` / `mousedown` / `mouseup` / `mouseenter` / `mouseleave`
+        - [x] `keydown` / `keyup`
         - [ ] `scroll`
         - [ ] `resize`
-    - [ ] `setInterval` / `setTimeout`
-    - [ ] `Math`
+    - [x] `setInterval` / `setTimeout`
+    - [x] `Math`
     - [ ] Scope / Function scope / Block scope
-    - [ ] `if` / `else` / `||` / `&&`
-    - [ ] DOM manipulation
-        - [ ] `querySelector` / `querySelectorAll`
-        - [ ] `appendChild`
-        - [ ] `removeChild`
-        - [ ] `remove`
-        - [ ] `setAttribute`
-        - [ ] `style`
-        - [ ] `classList`
-        - [ ] `textContent`
-        - [ ] `innerText`
-        - [ ] `innerHTML`
-    - [ ] `fetch`
-    - [ ] JSON
+    - [x] `if` / `else` / `||` / `&&`
+    - [x] DOM manipulation
+        - [x] `querySelector` / `querySelectorAll`
+        - [x] `appendChild`
+        - [x] `removeChild`
+        - [x] `remove`
+        - [x] `setAttribute`
+        - [x] `style`
+        - [x] `classList`
+        - [x] `textContent`
+        - [x] `innerText`
+        - [x] `innerHTML`
+    - [x] `fetch`
+    - [x] JSON
     - [ ] Object
     - [ ] `class` / `constructor`
+    - [ ] Modules
 
 # Exercices
 
-- [ ] Font size controller (click on + and - to change font size)
-- [ ] Weight convertissor
-- [ ] Calculator
-- [ ] Dice
+- [x] Cursor
+- [x] Weight convertissor
+- [x] Player control
+- [x] Element following cursor
+- [x] Font size controller (click on + and - to change font size)
+- [x] Calculator
+- [x] Dice roller
+- [x] Currency converter (https://exchangeratesapi.io/)
+- [ ] Prevent copy
 - [ ] Digital clock
 - [ ] Needles clock
 - [ ] Target shooter (mouse that shoot targets)

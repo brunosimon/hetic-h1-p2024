@@ -1,0 +1,9 @@
+.cursor
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    background: url(./cursor.png);
+}

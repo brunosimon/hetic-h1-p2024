@@ -1,0 +1,39 @@
+body
+{
+    background: #dddddd;
+    font-family: Helvetica, Arial;
+}
+
+.container
+{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.controller .less,
+.controller .more
+{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #ff0000;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 10px;
+    background: linear-gradient(#444444, #222222)
+}
+
+.controller .value
+{
+    padding-left: 10px;
+}
+
+.text
+{
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 15px 30px;
+    margin-top: 10px;
+}

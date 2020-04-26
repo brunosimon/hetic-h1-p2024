@@ -1,0 +1,12 @@
+html
+{
+    cursor: none;
+}
+
+.cursor
+{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background: url(./cursor.png);
+}

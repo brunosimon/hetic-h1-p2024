@@ -125,22 +125,66 @@ console.log(foo)
                         <pre contenteditable><code>
 const foo = document.querySelectorAll('.toto')
 
-for(const _key in foo)
-{
-    const bar = foo[_key]
-    console.log(bar)
-}
+console.log(foo)
                         </code></pre>
                     </div>
                     <ul>
                         <li>Similaire à <span class="hl">querySelector</span></li>
-                        <li>Renvoie un tableau de tous les éléments ayant la classe <span class="u">toto</span></li>
+                        <li>Renvoie un genre de tableau de tous les éléments ayant la classe <span class="u">toto</span></li>
                     </ul>
                 </section>
 
                 <section>
+                    <p>☝️ le tableau renvoyé n'est pas tout à fait un tableau</p>
+                    <p>Si on tente par exemple un <span class="hl">for ... in ...</span> dessus, on va se retrouver avec des clées non désirées</p>
+                    <div class="code-steps" data-type="js" data-trim>
+                        <pre contenteditable><code>
+const foo = document.querySelectorAll('.toto')
+
+for(const key in foo)
+{
+    console.log(key)
+}
+                        </code></pre>
+                    </div>
+                </section>
+
+                <section>
+                    <p>Alors qu'un <span class="hl">for ... of ...</span> va fonctionner</p>
+                    <div class="code-steps" data-type="js" data-trim>
+                        <pre contenteditable><code>
+const foo = document.querySelectorAll('.toto')
+
+for(const element of foo)
+{
+    console.log(element)
+}
+                        </code></pre>
+                    </div>
+                </section>
+
+                <section>
+                    <p>Une bonne astuce consiste à transformer ce "genre de tableau" en un vrai tableau</p>
+                    <p>Pour cela, deux façons de faire</p>
+                    <p>Avec <span class="hl">Array.from()</span></p>
+                    <div class="code-steps" data-type="js" data-trim>
+                        <pre contenteditable><code>
+const foo = document.querySelectorAll('p')
+const bar = Array.from(foo)
+                        </code></pre>
+                    </div>
+                    <p>Avec le <span class="hl">spread operator</span></p>
+                    <div class="code-steps" data-type="js" data-trim>
+                        <pre contenteditable><code>
+const foo = document.querySelectorAll('p')
+const bar = [...foo]
+                        </code></pre>
+                    </div>
+                </section>
+
+                <section>
                     <p><span class="hl">querySelector</span> et <span class="hl">querySelectorAll</span> ont rendu obsolète les autres méthodes</p>
-                    <p>N'utilisez que ces deux là dans un souci de simplicité</p>
+                    <p>⚠️ N'utilisez que ces deux là dans un souci de simplicité</p>
                 </section>
 
                 <section>
@@ -262,6 +306,28 @@ toto.textContent = 'Coucou, je suis toto'
 foo.appendChild(toto)
                         </code></pre>
                     </div>
+                </section>
+
+                <section>
+                    <h3>Input value</h3>
+                    <p>Il est possible de récupérer la valeur d'un input que ce soit un input text, un select, un textarea, etc.</p>
+                    <div class="code-steps" data-type="html" data-trim>
+                        <pre contenteditable><code>
+&lt;input value="test" type="text" class="my-awesome-input"&gt;
+                        </code></pre>
+                    </div>
+                    <div class="code-steps" data-type="js" data-trim>
+                        <pre contenteditable><code>
+const input = document.querySelector('.my-awesome-input')
+console.log(input.value)
+                        </code></pre>
+                    </div>
+                </section>
+
+                <section>
+                    <p>⚠️</p>
+                    <p>Récupérer un élément dans la page demande pas mal de ressources pour le navigateur</p>
+                    <p>Il faut minimiser cette pratique autant que possible</p>
                 </section>
 
             </div>
