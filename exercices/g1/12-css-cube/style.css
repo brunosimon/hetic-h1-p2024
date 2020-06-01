@@ -1,0 +1,29 @@
+.cube
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    perspective: 800px;
+}
+
+.cube *
+{
+    transform-style: preserve-3d;
+}
+
+.cube .face
+{
+    display: flex;
+    position: absolute;
+    top: -200px;
+    left: -200px;
+    width: 400px;
+    height: 400px;
+    background: red;
+    color: #ffffff;
+    font-size: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cube .face.x-pos { transform: rotateY(90deg) translateZ(200px); }

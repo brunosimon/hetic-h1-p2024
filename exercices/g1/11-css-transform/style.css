@@ -1,0 +1,95 @@
+.container
+{
+    display: flex;
+    background: #dddddd;
+    margin: 40px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    perspective: 800px;
+}
+
+.container *
+{
+    transform-style: preserve-3d;
+}
+
+.container .element
+{
+    width: 200px;
+    height: 200px;
+    background: orange;
+}
+
+.container-1:hover .element
+{
+    transform: scale(3, 1);
+}
+
+.container-2:hover .element
+{
+    transform: translateY(50%);
+}
+
+.container-3:hover .element
+{
+    transform: rotate(-25deg);
+}
+
+.container-4:hover .element
+{
+    transform: skew(-15deg, -15deg);
+}
+
+.container-5:hover .element
+{
+    transform: rotate(35deg);
+    transform-origin: bottom left;
+}
+
+.container-6:hover .element
+{
+    transform: rotate(35deg) translateX(100px) scaleY(0.5);
+}
+
+.container-7:hover .element
+{
+    transform: rotateX(60deg);
+}
+
+.container-8:hover .element
+{
+    transform: translateZ(200px);
+}
+
+.container-9:hover .element
+{
+    transform: scaleZ(2);
+}
+
+.container-10:hover .element
+{
+    transform: rotateY(150deg);
+    backface-visibility: hidden;
+}
+
+.container-11 .element
+{
+    position: relative;
+}
+
+.container-11 .element .inner
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background: red;
+    transform: translateZ(40px);
+}
+
+.container-11:hover .element
+{
+    transform: rotateX(75deg);
+}

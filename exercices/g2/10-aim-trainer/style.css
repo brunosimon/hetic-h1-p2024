@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+:root
+{
+    --background-inner: #333333;
+    --background-outer: #000000;
+    --text-color: #666666;
+    --text-size: 80px;
+    --target-size: 8vmin;
+    --target-color-1: #dddddd;
+    --target-color-2: #dd0000;
+}
+
+html,
+body,
+.aim-trainer
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.aim-trainer
+{
+    background-image: radial-gradient(var(--background-inner), var(--background-outer));
+    color: var(--text-color);
+    font-size: var(--text-size);
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500;
+}
+
+.aim-trainer .score,
+.aim-trainer .action,
+.aim-trainer .timer
+{
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.aim-trainer .score
+{
+    display: none;
+    top: calc(25% - var(--text-size) / 2);
+}
+
+.aim-trainer .action
+{
+    top: calc(50% - var(--text-size) / 2);
+    cursor: pointer;
+}
+
+.aim-trainer .timer
+{
+    display: none;
+    top: calc(75% - var(--text-size) / 2);
+}
+
+.aim-trainer .target
+{
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: var(--target-size);
+    height: var(--target-size);
+    background: var(--target-color-1);
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px #00000088;
+}
+
+.aim-trainer .target::before
+{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 17%;
+    left: 17%;
+    width: 66%;
+    height: 66%;
+    background: var(--target-color-2);
+    border-radius: 50%;
+}
+
+.aim-trainer .target::after
+{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 33%;
+    left: 33%;
+    width: 33%;
+    height: 33%;
+    background: var(--target-color-1);
+    border-radius: 50%;
+}

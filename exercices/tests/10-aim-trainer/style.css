@@ -5,7 +5,7 @@
     --background-inner: #333333;
     --background-outer: #000000;
     --text-color: #666666;
-    --title-size: 70px;
+    --text-size: 70px;
     --target-size: 8vmin;
 }
 
@@ -30,13 +30,13 @@ body
     background: radial-gradient(var(--background-inner), var(--background-outer));
     color: var(--text-color);
     font-family: 'Orbitron', sans-serif;
-    font-size: var(--title-size);
+    font-size: var(--text-size);
 }
 
 .aim-trainer .action
 {
     position: absolute;
-    top: calc(50% - var(--title-size) * 0.5);
+    top: calc(50% - var(--text-size) * 0.5);
     width: 100%;
     text-align: center;
     cursor: pointer;
@@ -46,7 +46,7 @@ body
 {
     display: none;
     position: absolute;
-    top: calc(25% - var(--title-size) * 0.5);
+    top: calc(25% - var(--text-size) * 0.5);
     width: 100%;
     text-align: center;
 }
@@ -55,7 +55,7 @@ body
 {
     display: none;
     position: absolute;
-    top: calc(75% - var(--title-size) * 0.5);
+    top: calc(75% - var(--text-size) * 0.5);
     width: 100%;
     text-align: center;
 }

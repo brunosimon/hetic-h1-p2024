@@ -1,0 +1,16 @@
+.container
+{
+    display: flex;
+    background: #dddddd;
+    padding: 20px;
+    margin: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .element
+{
+    width: 200px;
+    height: 200px;
+    background: orange;
+}

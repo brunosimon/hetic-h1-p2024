@@ -1,0 +1,91 @@
+body
+{
+    background: #ccc;
+}
+
+.cube
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    perspective: 800px;
+    transform-style: preserve-3d;
+}
+
+.cube .pivot
+{
+    transform-style: preserve-3d;
+}
+
+
+.cube .face
+{
+    position: absolute;
+    top: -200px;
+    left: -200px;
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    image-rendering: pixelated;
+}
+
+.cube .face.x-pos { transform: rotateY(90deg) translateZ(200px); }
+.cube .face.x-neg { transform: rotateY(-90deg) translateZ(200px); }
+.cube .face.y-pos { transform: rotateX(90deg) translateZ(200px); }
+.cube .face.y-neg { transform: rotateX(-90deg) translateZ(200px); }
+.cube .face.z-pos { transform: rotateY(0deg) translateZ(200px); }
+.cube .face.z-neg { transform: rotateY(180deg) translateZ(200px); }
+
+.cube .shadow
+{
+    position: absolute;
+    top: -400px;
+    left: -400px;
+    width: 800px;
+    height: 800px;
+    background-size: cover;
+    background-image: radial-gradient(closest-side, #00000055, #00000000);
+    transform: rotateX(-90deg) translateZ(201px);
+}
+
+.cube.smithing-table .face.x-pos { background-image: url(./images/smithing_table_side.png); transform: rotateY(90deg) translateZ(200px); }
+.cube.smithing-table .face.x-neg { background-image: url(./images/smithing_table_side.png); transform: rotateY(-90deg) translateZ(200px); }
+.cube.smithing-table .face.y-pos { background-image: url(./images/smithing_table_top.png); transform: rotateX(90deg) translateZ(200px); }
+.cube.smithing-table .face.y-neg { background-image: url(./images/smithing_table_bottom.png); transform: rotateX(-90deg) translateZ(200px); }
+.cube.smithing-table .face.z-pos { background-image: url(./images/smithing_table_front.png); transform: rotateY(0deg) translateZ(200px); }
+.cube.smithing-table .face.z-neg { background-image: url(./images/smithing_table_front.png); transform: rotateY(180deg) translateZ(200px); }
+
+.cube.tnt .face.x-pos { background-image: url(./images/tnt_side.png); transform: rotateY(90deg) translateZ(200px); }
+.cube.tnt .face.x-neg { background-image: url(./images/tnt_side.png); transform: rotateY(-90deg) translateZ(200px); }
+.cube.tnt .face.y-pos { background-image: url(./images/tnt_top.png); transform: rotateX(90deg) translateZ(200px); }
+.cube.tnt .face.y-neg { background-image: url(./images/tnt_bottom.png); transform: rotateX(-90deg) translateZ(200px); }
+.cube.tnt .face.z-pos { background-image: url(./images/tnt_side.png); transform: rotateY(0deg) translateZ(200px); }
+.cube.tnt .face.z-neg { background-image: url(./images/tnt_side.png); transform: rotateY(180deg) translateZ(200px); }
+
+.cube.warped-nylium .face.x-pos { background-image: url(./images/warped_nylium_side.png); transform: rotateY(90deg) translateZ(200px); }
+.cube.warped-nylium .face.x-neg { background-image: url(./images/warped_nylium_side.png); transform: rotateY(-90deg) translateZ(200px); }
+.cube.warped-nylium .face.y-pos { background-image: url(./images/warped_nylium.png); transform: rotateX(90deg) translateZ(200px); }
+.cube.warped-nylium .face.y-neg { background-image: url(./images/warped_nylium.png); transform: rotateX(-90deg) translateZ(200px); }
+.cube.warped-nylium .face.z-pos { background-image: url(./images/warped_nylium_side.png); transform: rotateY(0deg) translateZ(200px); }
+.cube.warped-nylium .face.z-neg { background-image: url(./images/warped_nylium_side.png); transform: rotateY(180deg) translateZ(200px); }
+
+.cube.barrel .face.x-pos { background-image: url(./images/barrel_side.png); transform: rotateY(90deg) translateZ(200px); }
+.cube.barrel .face.x-neg { background-image: url(./images/barrel_side.png); transform: rotateY(-90deg) translateZ(200px); }
+.cube.barrel .face.y-pos { background-image: url(./images/barrel_top.png); transform: rotateX(90deg) translateZ(200px); }
+.cube.barrel .face.y-neg { background-image: url(./images/barrel_bottom.png); transform: rotateX(-90deg) translateZ(200px); }
+.cube.barrel .face.z-pos { background-image: url(./images/barrel_side.png); transform: rotateY(0deg) translateZ(200px); }
+.cube.barrel .face.z-neg { background-image: url(./images/barrel_side.png); transform: rotateY(180deg) translateZ(200px); }
+
+.cube.jukebox .face.x-pos { background-image: url(./images/jukebox_side.png); transform: rotateY(90deg) translateZ(200px); }
+.cube.jukebox .face.x-neg { background-image: url(./images/jukebox_side.png); transform: rotateY(-90deg) translateZ(200px); }
+.cube.jukebox .face.y-pos { background-image: url(./images/jukebox_top_off.png); transform: rotateX(90deg) translateZ(200px); }
+.cube.jukebox .face.y-neg { background-image: url(./images/jukebox_top_off.png); transform: rotateX(-90deg) translateZ(200px); }
+.cube.jukebox .face.z-pos { background-image: url(./images/jukebox_side.png); transform: rotateY(0deg) translateZ(200px); }
+.cube.jukebox .face.z-neg { background-image: url(./images/jukebox_side.png); transform: rotateY(180deg) translateZ(200px); }
+
+.cube.crafting-table .face.x-pos { background-image: url(./images/crafting_table_side.png); transform: rotateY(90deg) translateZ(200px); }
+.cube.crafting-table .face.x-neg { background-image: url(./images/crafting_table_side.png); transform: rotateY(-90deg) translateZ(200px); }
+.cube.crafting-table .face.y-pos { background-image: url(./images/crafting_table_top.png); transform: rotateX(90deg) translateZ(200px); }
+.cube.crafting-table .face.y-neg { background-image: url(./images/crafting_table_top.png); transform: rotateX(-90deg) translateZ(200px); }
+.cube.crafting-table .face.z-pos { background-image: url(./images/crafting_table_front.png); transform: rotateY(0deg) translateZ(200px); }
+.cube.crafting-table .face.z-neg { background-image: url(./images/crafting_table_front.png); transform: rotateY(180deg) translateZ(200px); }

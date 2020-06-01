@@ -61,6 +61,8 @@ Repo des cours de développement web en première année pour la promotion P2024
 - [x] Calculator
 - [x] Dice roller
 - [x] Currency converter (https://exchangeratesapi.io/)
+- [x] Googly eyes
+- [x] Drumkit
 - [ ] Prevent copy
 - [ ] Digital clock
 - [ ] Needles clock
@@ -69,11 +71,9 @@ Repo des cours de développement web en première année pour la promotion P2024
 - [ ] Catcher (keyboard player that catch targets)
 - [ ] Carousel
 - [ ] Popin
-- [ ] Googly eyes
 - [ ] Menu toggle
 - [ ] Lazy loader
 - [ ] Cursor parallax
 - [ ] Scroll parallax
-- [ ] Drumkit
 - [ ] Weather widget
 - [ ] 3D button
