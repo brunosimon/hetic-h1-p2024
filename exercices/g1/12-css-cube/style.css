@@ -1,3 +1,8 @@
+body
+{
+    background: #f8f8f8;
+}
+
 .cube
 {
     position: absolute;
@@ -11,19 +16,61 @@
     transform-style: preserve-3d;
 }
 
+.cube .shadow
+{
+    position: absolute;
+    top: -400px;
+    left: -400px;
+    width: 800px;
+    height: 800px;
+    transform: rotateX(-90deg) translateZ(201px);
+    background-image: radial-gradient(closest-side, #00000088, #00000000);
+}
+
 .cube .face
 {
-    display: flex;
     position: absolute;
     top: -200px;
     left: -200px;
     width: 400px;
     height: 400px;
-    background: red;
-    color: #ffffff;
-    font-size: 100px;
-    align-items: center;
-    justify-content: center;
+    background: #3c2424;
+    background-size: cover;
+    image-rendering: pixelated; /* Chrome */
+    image-rendering: -moz-crisp-edges; /* Firefox */
 }
 
 .cube .face.x-pos { transform: rotateY(90deg) translateZ(200px); }
+.cube .face.x-neg { transform: rotateY(-90deg) translateZ(200px); }
+.cube .face.y-pos { transform: rotateX(-90deg) translateZ(200px); }
+.cube .face.y-neg { transform: rotateX(90deg) translateZ(200px); }
+.cube .face.z-pos { transform: rotateY(0deg) translateZ(200px); }
+.cube .face.z-neg { transform: rotateY(180deg) translateZ(200px); }
+
+.cube.barrel .face.x-pos { background-image: url('./images/barrel_side.png'); }
+.cube.barrel .face.x-neg { background-image: url('./images/barrel_side.png'); }
+.cube.barrel .face.y-pos { background-image: url('./images/barrel_bottom.png'); }
+.cube.barrel .face.y-neg { background-image: url('./images/barrel_top_open.png'); }
+.cube.barrel .face.z-pos { background-image: url('./images/barrel_side.png'); }
+.cube.barrel .face.z-neg { background-image: url('./images/barrel_side.png'); }
+
+.cube.beehive .face.x-pos { background-image: url('./images/beehive_side.png'); }
+.cube.beehive .face.x-neg { background-image: url('./images/beehive_side.png'); }
+.cube.beehive .face.y-pos { background-image: url('./images/beehive_end.png'); }
+.cube.beehive .face.y-neg { background-image: url('./images/beehive_end.png'); }
+.cube.beehive .face.z-pos { background-image: url('./images/beehive_front_honey.png'); }
+.cube.beehive .face.z-neg { background-image: url('./images/beehive_side.png'); }
+
+.cube.coarse-dirt .face.x-pos { background-image: url('./images/coarse_dirt.png'); }
+.cube.coarse-dirt .face.x-neg { background-image: url('./images/coarse_dirt.png'); }
+.cube.coarse-dirt .face.y-pos { background-image: url('./images/coarse_dirt.png'); }
+.cube.coarse-dirt .face.y-neg { background-image: url('./images/coarse_dirt.png'); }
+.cube.coarse-dirt .face.z-pos { background-image: url('./images/coarse_dirt.png'); }
+.cube.coarse-dirt .face.z-neg { background-image: url('./images/coarse_dirt.png'); }
+
+.cube.warped-nylium .face.x-pos { background-image: url('./images/warped_nylium_side.png'); }
+.cube.warped-nylium .face.x-neg { background-image: url('./images/warped_nylium_side.png'); }
+.cube.warped-nylium .face.y-pos { background-image: url('./images/netherrack.png'); }
+.cube.warped-nylium .face.y-neg { background-image: url('./images/warped_nylium.png'); }
+.cube.warped-nylium .face.z-pos { background-image: url('./images/warped_nylium_side.png'); }
+.cube.warped-nylium .face.z-neg { background-image: url('./images/warped_nylium_side.png'); }

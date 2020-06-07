@@ -16,19 +16,61 @@ body
     transform-style: preserve-3d;
 }
 
-.face
+.cube .shadow
 {
-    display: flex;
+    position: absolute;
+    top: -400px;
+    left: -400px;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(closest-side, #00000088, #00000000);
+    transform: rotateX(-90deg) translateZ(201px) rotateX(180deg);
+    backface-visibility: hidden;
+}
+
+.cube .face
+{
     position: absolute;
     top: -200px;
     left: -200px;
     width: 400px;
     height: 400px;
-    background: #ff0000;
-    color: #ffffff;
-    font-size: 100px;
-    align-items: center;
-    justify-content: center;
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
 }
 
-.face.x-pos { transform: rotateY(90deg) translateZ(200px); }
+.cube .face.x-pos { transform: rotateY(90deg) translateZ(200px); }
+.cube .face.x-neg { transform: rotateY(-90deg) translateZ(200px); }
+.cube .face.y-pos { transform: rotateX(-90deg) translateZ(200px); }
+.cube .face.y-neg { transform: rotateX(90deg) translateZ(200px); }
+.cube .face.z-pos { transform: rotateY(0deg) translateZ(200px); }
+.cube .face.z-neg { transform: rotateY(180deg) translateZ(200px); }
+
+.cube.beehive .face.x-pos { background-image: url('./images/beehive_side.png'); }
+.cube.beehive .face.x-neg { background-image: url('./images/beehive_side.png'); }
+.cube.beehive .face.y-pos { background-image: url('./images/beehive_end.png'); }
+.cube.beehive .face.y-neg { background-image: url('./images/beehive_end.png'); }
+.cube.beehive .face.z-pos { background-image: url('./images/beehive_front_honey.png'); }
+.cube.beehive .face.z-neg { background-image: url('./images/beehive_side.png'); }
+
+.cube.crafting-table .face.x-pos { background-image: url('./images/crafting_table_side.png'); }
+.cube.crafting-table .face.x-neg { background-image: url('./images/crafting_table_side.png'); }
+.cube.crafting-table .face.y-pos { background-image: url('./images/crafting_table_top.png'); }
+.cube.crafting-table .face.y-neg { background-image: url('./images/crafting_table_top.png'); }
+.cube.crafting-table .face.z-pos { background-image: url('./images/crafting_table_side.png'); }
+.cube.crafting-table .face.z-neg { background-image: url('./images/crafting_table_side.png'); }
+
+.cube.gilded-blackstone .face.x-pos { background-image: url('./images/gilded_blackstone.png'); }
+.cube.gilded-blackstone .face.x-neg { background-image: url('./images/gilded_blackstone.png'); }
+.cube.gilded-blackstone .face.y-pos { background-image: url('./images/gilded_blackstone.png'); }
+.cube.gilded-blackstone .face.y-neg { background-image: url('./images/gilded_blackstone.png'); }
+.cube.gilded-blackstone .face.z-pos { background-image: url('./images/gilded_blackstone.png'); }
+.cube.gilded-blackstone .face.z-neg { background-image: url('./images/gilded_blackstone.png'); }
+
+.cube.mossy-cobblestone .face.x-pos { background-image: url('./images/mossy_cobblestone1.png'); }
+.cube.mossy-cobblestone .face.x-neg { background-image: url('./images/mossy_cobblestone1.png'); }
+.cube.mossy-cobblestone .face.y-pos { background-image: url('./images/mossy_cobblestone1.png'); }
+.cube.mossy-cobblestone .face.y-neg { background-image: url('./images/mossy_cobblestone1.png'); }
+.cube.mossy-cobblestone .face.z-pos { background-image: url('./images/mossy_cobblestone1.png'); }
+.cube.mossy-cobblestone .face.z-neg { background-image: url('./images/mossy_cobblestone1.png'); }
