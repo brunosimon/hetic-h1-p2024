@@ -64,6 +64,7 @@ Repo des cours de développement web en première année pour la promotion P2024
 - [x] Googly eyes
 - [x] Drumkit
 - [ ] Prevent copy
+- [ ] Guess the number
 - [ ] Digital clock
 - [ ] Needles clock
 - [ ] Target shooter (mouse that shoot targets)
